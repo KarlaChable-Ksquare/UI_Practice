@@ -5,7 +5,6 @@ class ProductCard22 extends StatelessWidget {
   String time;
   String logo;
   String imageURL;
-  //String? pokemon;
 
   ProductCard22({
     super.key,
@@ -29,7 +28,6 @@ class ProductCard22 extends StatelessWidget {
             children: [
               Container(
                 margin: EdgeInsets.fromLTRB(15, 15, 15, 15),
-                //color: Colors.black,
                 height: 50,
                 width: double.infinity,
                 child: Row(
@@ -52,7 +50,6 @@ class ProductCard22 extends StatelessWidget {
                               Container(
                                 height: 30,
                                 width: 30,
-                                //color: Colors.white.withOpacity(0.2),
                                 child: Image.asset(
                                   logo,
                                 ),

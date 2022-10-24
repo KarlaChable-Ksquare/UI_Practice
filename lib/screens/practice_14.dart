@@ -50,7 +50,6 @@ class Practice14 extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10),
                     color: Colors.blueGrey.shade300,
                   ),
-                  //padding: EdgeInsets.all(24),
                   margin: EdgeInsets.all(6),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.center,

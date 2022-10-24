@@ -21,13 +21,10 @@ class ProductCard23 extends StatelessWidget {
         ),
         child: SizedBox(
           child: Container(
-            //height: 120,
-            //width: 120,
             child: Stack(
               children: [
                 Container(
                   margin: EdgeInsets.all(10.0),
-                  //padding: EdgeInsets.all(10.0),
                   color: Colors.white,
                   height: double.infinity,
                   width: double.infinity,
