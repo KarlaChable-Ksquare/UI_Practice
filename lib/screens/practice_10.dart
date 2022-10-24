@@ -12,7 +12,7 @@ class Practice10 extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: 620, //450
+              height: 590, //450
               width: double.infinity,
               child: Image.network("https://i.ibb.co/sbZnGJR/tloz-01.jpg",
                   fit: BoxFit.cover),
@@ -23,7 +23,7 @@ class Practice10 extends StatelessWidget {
                 children: [
                   SizedBox(
                     width: double.infinity,
-                    height: 64,
+                    height: 62,
                     child: OutlinedButton(
                       style: OutlinedButton.styleFrom(
                           side: BorderSide(
@@ -46,7 +46,7 @@ class Practice10 extends StatelessWidget {
                   ),
                   SizedBox(
                     width: double.infinity,
-                    height: 64,
+                    height: 62,
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary: Color.fromRGBO(17, 105, 215, 1),

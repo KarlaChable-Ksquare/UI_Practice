@@ -14,10 +14,10 @@ class Practice15 extends StatelessWidget {
             children: [
               Container(
                 child: Image.asset("images/taco.jpg",
-                    height: 300, width: double.infinity, fit: BoxFit.fitHeight),
+                    height: 290, width: double.infinity, fit: BoxFit.fitHeight),
               ),
               Container(
-                margin: EdgeInsets.fromLTRB(20, 30, 20, 25),
+                margin: EdgeInsets.fromLTRB(20, 25, 20, 25),
                 child: Column(
                   children: [
                     Container(
@@ -55,8 +55,7 @@ class Practice15 extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 10,
-                      width: 10,
+                      height: 8,
                     ),
                     Container(
                       child: Text(
@@ -65,8 +64,7 @@ class Practice15 extends StatelessWidget {
                       ),
                     ),
                     SizedBox(
-                      height: 25,
-                      width: 15,
+                      height: 10,
                     ),
                     SizedBox(
                       width: double.infinity,

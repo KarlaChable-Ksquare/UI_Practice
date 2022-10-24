@@ -8,6 +8,6 @@ main() {
       primarySwatch: Colors.blue,
     ),
     debugShowCheckedModeBanner: false,
-    home: Practice23(),
+    home: SafeArea(child: Practice23()),
   ));
 }

@@ -10,11 +10,11 @@ class Practice16 extends StatelessWidget {
         body: Column(
           children: [
             SizedBox(
-              height: 165,
+              height: 135,
             ),
             Container(
               margin: EdgeInsets.all(15),
-              height: 450,
+              height: 440,
               width: double.infinity,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),

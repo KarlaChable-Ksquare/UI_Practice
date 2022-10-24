@@ -8,7 +8,7 @@ class Practice17 extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          color: Colors.pink.shade200,
+          padding: EdgeInsets.fromLTRB(15, 0, 10, 0),
           height: 300,
           width: 400,
           child: Stack(
