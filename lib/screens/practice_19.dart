@@ -13,8 +13,8 @@ class _Practice19State extends State<Practice19> {
   TextEditingController _mobileCtrl = TextEditingController();
   TextEditingController _passwordCtrl = TextEditingController();
   bool _isTermsAccepted = false;
+  String _gender = "Male";
   var _formKey = GlobalKey<FormState>();
-  String? gender;
 
   @override
   Widget build(BuildContext context) {
@@ -176,44 +176,53 @@ class _Practice19State extends State<Practice19> {
                       ),
                       //
                       Container(
-                        margin: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                        padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                         child: Column(
                           children: [
                             Transform.scale(
-                              scale: 1.3,
-                              child: Theme(
-                                data: ThemeData(
-                                    toggleableActiveColor: Colors.red,
-                                    unselectedWidgetColor: Colors.blue),
-                                child: RadioListTile(
-                                    title: Text("Male"),
-                                    value: gender,
-                                    groupValue: "Male",
-                                    activeColor: Colors.blue,
-                                    onChanged: (value) {
+                              scale: 1.2,
+                              child: Row(
+                                children: [
+                                  Radio(
+                                    activeColor: Colors.tealAccent,
+                                    value: "Male",
+                                    groupValue: _gender,
+                                    onChanged: (val) {
                                       setState(() {
-                                        gender = value.toString();
+                                        _gender = val!;
                                       });
-                                    }),
+                                    },
+                                  ),
+                                  GestureDetector(
+                                    child: Text("Male"),
+                                    onTap: ((() {
+                                      _gender = "Male";
+                                    })),
+                                  ),
+                                ],
                               ),
                             ),
                             Transform.scale(
-                              scale: 1.3,
-                              child: Theme(
-                                data: ThemeData(
-                                    backgroundColor: Colors.grey,
-                                    toggleableActiveColor: Colors.red,
-                                    unselectedWidgetColor: Colors.blue),
-                                child: RadioListTile(
-                                    activeColor: Colors.blue,
-                                    title: Text("Female"),
-                                    value: gender,
-                                    groupValue: "Female",
-                                    onChanged: (value) {
+                              scale: 1.2,
+                              child: Row(
+                                children: [
+                                  Radio(
+                                    activeColor: Colors.pink,
+                                    value: "Female",
+                                    groupValue: _gender,
+                                    onChanged: (val) {
                                       setState(() {
-                                        gender = value.toString();
+                                        _gender = val!;
                                       });
-                                    }),
+                                    },
+                                  ),
+                                  GestureDetector(
+                                    child: Text("Female"),
+                                    onTap: ((() {
+                                      _gender = "Female";
+                                    })),
+                                  ),
+                                ],
                               ),
                             ),
                           ],
@@ -240,7 +249,6 @@ class _Practice19State extends State<Practice19> {
                               checkColor: Colors.blue,
                               value: _isTermsAccepted,
                               onChanged: (val) {
-                                print(val);
                                 setState(() {
                                   _isTermsAccepted = val!;
                                 });
@@ -270,7 +278,6 @@ class _Practice19State extends State<Practice19> {
                         ),
                         onPressed: () {
                           if (_formKey.currentState!.validate()) {
-                            print(gender);
                             print(_nameCtrl.text);
                             print(_emailCtrl.text);
                             print(_mobileCtrl.text);
