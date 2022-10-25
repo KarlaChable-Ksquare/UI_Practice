@@ -14,6 +14,7 @@ class Practice4 extends StatelessWidget {
             child: ElevatedButton(
               style: ElevatedButton.styleFrom(
                 primary: Color.fromRGBO(2, 31, 51, 1),
+                shape: BeveledRectangleBorder(),
               ),
               onPressed: () {},
               child: Text(

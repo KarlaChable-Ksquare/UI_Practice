@@ -275,6 +275,7 @@ class _Practice19State extends State<Practice19> {
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary: Color.fromRGBO(63, 114, 175, 1),
+                          shape: BeveledRectangleBorder(),
                         ),
                         onPressed: () {
                           if (_formKey.currentState!.validate()) {

@@ -26,10 +26,13 @@ class Practice10 extends StatelessWidget {
                     height: 62,
                     child: OutlinedButton(
                       style: OutlinedButton.styleFrom(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(0),
+                          ),
                           side: BorderSide(
-                        width: 3.0,
-                        color: Color.fromRGBO(17, 105, 215, 1),
-                      )),
+                            width: 3.0,
+                            color: Color.fromRGBO(17, 105, 215, 1),
+                          )),
                       onPressed: () {},
                       child: Text(
                         "Continue with Google",
@@ -50,6 +53,7 @@ class Practice10 extends StatelessWidget {
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary: Color.fromRGBO(17, 105, 215, 1),
+                          shape: BeveledRectangleBorder(),
                         ),
                         onPressed: () {},
                         child: Text(

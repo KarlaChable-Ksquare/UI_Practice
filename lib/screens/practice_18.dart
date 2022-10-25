@@ -35,6 +35,7 @@ class Practice18 extends StatelessWidget {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               primary: Colors.white,
+                              shape: BeveledRectangleBorder(),
                             ),
                             onPressed: () {},
                             child: Align(
@@ -71,6 +72,7 @@ class Practice18 extends StatelessWidget {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               primary: Color.fromRGBO(17, 105, 215, 1),
+                              shape: BeveledRectangleBorder(),
                             ),
                             onPressed: () {},
                             child: Align(

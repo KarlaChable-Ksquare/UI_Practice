@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_practice/screens/practice_23.dart';
+import 'package:ui_practice/screens/practice_20.dart';
 
 main() {
   runApp(MaterialApp(
@@ -8,6 +8,6 @@ main() {
       primarySwatch: Colors.blue,
     ),
     debugShowCheckedModeBanner: false,
-    home: SafeArea(child: Practice23()),
+    home: SafeArea(child: Practice20()),
   ));
 }
