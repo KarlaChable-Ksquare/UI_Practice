@@ -16,6 +16,9 @@ class Practice12 extends StatelessWidget {
               child: OutlinedButton(
                 style: OutlinedButton.styleFrom(
                   side: BorderSide(width: 2, color: Colors.white38),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(0),
+                  ),
                 ),
                 onPressed: () {},
                 child: Row(
