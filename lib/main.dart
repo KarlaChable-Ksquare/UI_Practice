@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ui_practice/screens/practice_23.dart';
+import 'package:ui_practice/router.dart';
+import 'package:ui_practice/screens/home.dart';
 
 main() {
   runApp(MaterialApp(
-    title: "Flutter Demo",
-    theme: ThemeData(
-      primarySwatch: Colors.blue,
-    ),
+    title: "UI Exercises",
+    theme: ThemeData(),
     debugShowCheckedModeBanner: false,
-    home: SafeArea(child: Practice23()),
+    onGenerateRoute: RouterGenerator().routerGenerate,
+    initialRoute: '/',
+    home: HomeScreen(),
   ));
 }

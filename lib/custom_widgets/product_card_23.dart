@@ -21,11 +21,12 @@ class ProductCard23 extends StatelessWidget {
         ),
         child: SizedBox(
           child: Container(
+            //height: 120,
+            //width: 120,
             child: Stack(
               children: [
                 Container(
-                  margin: EdgeInsets.all(10.0),
-                  color: Colors.white,
+                  padding: EdgeInsets.all(10.0),
                   height: double.infinity,
                   width: double.infinity,
                   child: Image.asset(imageURL, fit: BoxFit.fitHeight),
@@ -38,6 +39,7 @@ class ProductCard23 extends StatelessWidget {
                       height: 25,
                       width: 30,
                       decoration: BoxDecoration(
+                        color: Colors.white,
                         borderRadius: BorderRadius.circular(100),
                       ),
                       child: Column(

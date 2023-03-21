@@ -12,7 +12,7 @@ class Practice10 extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(
-              height: 590, //450
+              height: 620, //450
               width: double.infinity,
               child: Image.network("https://i.ibb.co/sbZnGJR/tloz-01.jpg",
                   fit: BoxFit.cover),
@@ -23,16 +23,13 @@ class Practice10 extends StatelessWidget {
                 children: [
                   SizedBox(
                     width: double.infinity,
-                    height: 62,
+                    height: 64,
                     child: OutlinedButton(
                       style: OutlinedButton.styleFrom(
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(0),
-                          ),
                           side: BorderSide(
-                            width: 3.0,
-                            color: Color.fromRGBO(17, 105, 215, 1),
-                          )),
+                        width: 3.0,
+                        color: Color.fromRGBO(17, 105, 215, 1),
+                      )),
                       onPressed: () {},
                       child: Text(
                         "Continue with Google",
@@ -49,11 +46,10 @@ class Practice10 extends StatelessWidget {
                   ),
                   SizedBox(
                     width: double.infinity,
-                    height: 62,
+                    height: 64,
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary: Color.fromRGBO(17, 105, 215, 1),
-                          shape: BeveledRectangleBorder(),
                         ),
                         onPressed: () {},
                         child: Text(

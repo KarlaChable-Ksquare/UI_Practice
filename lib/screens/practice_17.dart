@@ -8,7 +8,7 @@ class Practice17 extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Container(
-          padding: EdgeInsets.fromLTRB(15, 0, 10, 0),
+          color: Colors.pink.shade200,
           height: 300,
           width: 400,
           child: Stack(
@@ -43,6 +43,7 @@ class Practice17 extends StatelessWidget {
                             Container(
                               height: 30,
                               width: 30,
+                              //color: Colors.white.withOpacity(0.2),
                               child: Image.asset(
                                 "images/starbucks.png",
                               ),
@@ -52,6 +53,7 @@ class Practice17 extends StatelessWidget {
                       ),
                       SizedBox(
                         width: 15,
+                        //height: 5,
                       ),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -65,6 +67,7 @@ class Practice17 extends StatelessWidget {
                                 fontWeight: FontWeight.bold),
                           ),
                           SizedBox(
+                            //width: 15,
                             height: 5,
                           ),
                           Text(

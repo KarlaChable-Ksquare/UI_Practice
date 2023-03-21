@@ -11,7 +11,7 @@ class Practice20 extends StatelessWidget {
         child: Column(
           children: [
             Container(
-              height: 315,
+              height: 325,
               width: double.infinity,
               child: Stack(
                 children: [
@@ -118,14 +118,14 @@ class Practice20 extends StatelessWidget {
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(20, 5, 20, 10),
+              padding: EdgeInsets.fromLTRB(20, 10, 20, 10),
               child: Text(
                 "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
                 style: TextStyle(fontSize: 16),
               ),
             ),
             Container(
-              padding: EdgeInsets.fromLTRB(10, 5, 10, 0),
+              padding: EdgeInsets.fromLTRB(10, 15, 10, 0),
               height: 80,
               width: double.infinity,
               child: Row(
@@ -138,9 +138,6 @@ class Practice20 extends StatelessWidget {
                     child: OutlinedButton(
                       style: OutlinedButton.styleFrom(
                           backgroundColor: Colors.white,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(0),
-                          ),
                           side: BorderSide(
                             width: 1.0,
                             color: Color.fromRGBO(17, 105, 215, 1),
@@ -161,7 +158,6 @@ class Practice20 extends StatelessWidget {
                     child: ElevatedButton(
                         style: ElevatedButton.styleFrom(
                           primary: Color.fromRGBO(17, 105, 215, 1),
-                          shape: BeveledRectangleBorder(),
                         ),
                         onPressed: () {},
                         child: Text(

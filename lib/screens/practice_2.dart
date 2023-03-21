@@ -19,6 +19,7 @@ class Practice2 extends StatelessWidget {
               Container(
                 height: 80,
                 width: 80,
+                //color: Colors.white.withOpacity(0.2),
                 child: Image.asset(
                   "images/starbucks.png",
                 ),

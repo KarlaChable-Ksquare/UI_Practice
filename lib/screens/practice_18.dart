@@ -23,8 +23,8 @@ class Practice18 extends StatelessWidget {
               Align(
                 alignment: Alignment.bottomCenter,
                 child: Container(
-                  padding: EdgeInsets.fromLTRB(15, 20, 15, 0),
-                  height: 230,
+                  padding: EdgeInsets.fromLTRB(15, 25, 15, 5),
+                  height: 250,
                   width: double.infinity,
                   child: Container(
                     child: Column(
@@ -35,7 +35,6 @@ class Practice18 extends StatelessWidget {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               primary: Colors.white,
-                              shape: BeveledRectangleBorder(),
                             ),
                             onPressed: () {},
                             child: Align(
@@ -72,7 +71,6 @@ class Practice18 extends StatelessWidget {
                           child: ElevatedButton(
                             style: ElevatedButton.styleFrom(
                               primary: Color.fromRGBO(17, 105, 215, 1),
-                              shape: BeveledRectangleBorder(),
                             ),
                             onPressed: () {},
                             child: Align(
@@ -101,7 +99,7 @@ class Practice18 extends StatelessWidget {
                         ),
                         SizedBox(
                           width: double.infinity,
-                          height: 5,
+                          height: 14,
                         ),
                         SizedBox(
                           width: 350,
